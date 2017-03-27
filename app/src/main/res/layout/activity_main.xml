@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.songzhihang.listheadtest.MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0"></View>
+
+
+        <com.example.songzhihang.listheadtest.CusListView
+            android:layout_below="@+id/view"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent"></com.example.songzhihang.listheadtest.CusListView>
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="我是头部"
+        android:visibility="gone"
+        android:background="#fff"
+        />
+
+    <TextView
+        android:id="@+id/buttom_text"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="我是头部"
+        android:visibility="gone"
+        android:background="#fff"
+        />
+
+
+
+
+</RelativeLayout>
